@@ -5,12 +5,12 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DbUtil {
-	private String dbUrl="jdbc:sqlserver://PC-20191208RYYY:0;DatabaseName=Car_system"; // Êı¾İ¿âÁ¬½ÓµØÖ·
-	private String dbUserName="sa"; // ÓÃ»§Ãû
-	private String dbPassword="12345678"; // ÃÜÂë
-	private String jdbcName="com.microsoft.sqlserver.jdbc.SQLServerDriver"; // Çı¶¯Ãû³Æ
+	private String dbUrl="jdbc:sqlserver://PC-20191208RYYY:0;DatabaseName=Car_system"; // æ•°æ®åº“è¿æ¥åœ°å€
+	private String dbUserName="***"; // è‡ªå·±çš„ç”¨æˆ·å
+	private String dbPassword="******"; // å¯¹åº”çš„å¯†ç 
+	private String jdbcName="com.microsoft.sqlserver.jdbc.SQLServerDriver"; // é©±åŠ¨åç§°
 	/**
-	 * »ñÈ¡Êı¾İ¿âÁ¬½Ó
+	 * è·å–æ•°æ®åº“è¿æ¥
 	 * @return
 	 * @throws Exception
 	 */
@@ -31,7 +31,7 @@ public class DbUtil {
 		return con;
 	}
 	/**
-	 * ¹Ø±ÕÊı¾İ¿âÁ¬½Ó
+	 * å…³é—­æ•°æ®åº“è¿æ¥
 	 * @param con
 	 * @throws Exception
 	 */
@@ -45,11 +45,11 @@ public class DbUtil {
 		DbUtil dbUtil=new DbUtil();
 		try {
 			dbUtil.getCon();
-			System.out.println("Êı¾İ¿âÁ¬½Ó³É¹¦£¡");
+			System.out.println("æ•°æ®åº“è¿æ¥æˆåŠŸï¼");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			System.out.println("Êı¾İ¿âÁ¬½ÓÊ§°Ü");
+			System.out.println("æ•°æ®åº“è¿æ¥å¤±è´¥");
 		}
 	}
 }
